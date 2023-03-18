@@ -1,0 +1,23 @@
+country,code,dogowner,catowner
+USA,USA,0.50,0.39
+UK,GBR,0.27,0.27
+Turkey,TUR,0.12,0.15
+Sweden,SWE,0.22,0.28
+Spain,ESP,0.37,0.23
+South Korea,KOR,0.20,0.06
+Russia,RUS,0.29,0.57
+Poland,POL,0.45,0.32
+Netherlands,NLD,0.25,0.26
+Mexico,MEX,0.64,0.24
+Japan,JPN,0.17,0.14
+Argentina,ARG,0.66,0.32
+Australia,AUS,0.39,0.29
+Belgium,BEL,0.29,0.33
+Brazil,BRA,0.58,0.28
+Canada,CAN,0.33,0.35
+China,CHN,0.25,0.10
+Czech Republic,CZE,0.38,0.26
+France,FRA,0.29,0.41
+Germany,DEU,0.21,0.29
+Hong Kong,HKG,0.14,0.10
+Italy,ITA,0.39,0.34
