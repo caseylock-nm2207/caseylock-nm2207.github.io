@@ -1,0 +1,280 @@
+body {
+  background-color: #867b69;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+a {
+  color: rgb(202, 242, 228);
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:40px;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: #a6917b;
+
+}
+
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tab button:hover {
+  background-color: #E5D3B3;
+}
+
+.tab button.active {
+  background-color: #f2e4cd;
+} 
+
+.tabcontent {
+  display: none;
+  color: black;
+  padding: 6px 12px;
+  background-color: #f2e4cd;
+  border-top: none;
+}
+
+.plot-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#benefits {
+  text-align: left;
+}
+
+#question {
+  color:#44786d;
+  font-size: medium;
+  font-weight: bold;
+}
+
+#canvas-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#petradar-container {
+  width: 500px;
+  position: relative;
+}
+
+.tabcontent a {
+  color: rgb(89, 105, 98);
+}
+
+#button {
+  color: #ecf0f1;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+  background-color: #3f8f7e;
+  border: 1px solid #58a997;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 6px 0px #135245;
+  transition: all .1s;
+}
+ 
+#button:active {
+  box-shadow: 0px 2px 0px #135245;
+  position: relative;
+  top: 2px;
+}
+
+.info {
+  position: relative;
+  border-radius: 10px;
+  width: 350px;
+  height: 300px;
+  background-color: rgb(245, 225, 205);
+  -webkit-box-shadow: 1px 1px 12px rgb(74, 56, 56);
+  box-shadow: 1px 1px 12px rgb(74, 56, 56);
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+}
+
+.mainpage {
+  top: 0;
+  position: absolute;
+  color: white;
+  background-color: rgb(162, 138, 126);
+  width: 350px;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px rgb(74, 56, 56);
+  box-shadow: 1px 1px 12px rgb(74, 56, 56);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.info:hover .mainpage {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+#details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefitcard {
+  width: 800px;
+  height: 400px;
+  border-radius: 4px;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+}
+
+.benefitcard p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  background: hsl(37, 94%, 88%);
+  border: 1px solid #4a3920;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefitcard a {
+  color: rgb(89, 105, 98);
+}
+
+.benefitcard p:hover {
+  flex: 7;
+}
+
+.benefitcard p span {
+  min-width: 15em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  color: #4a3920;
+  letter-spacing: .1em;
+}
+
+.benefitcard p:hover span {
+  transform: rotate(0);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 350px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgb(98, 75, 66);
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background:rgb(81, 72, 69);
+  color: hsl(37, 94%, 88%);
+}
+
+.flip-card-back {
+  background: hsl(37, 94%, 88%);
+  color: rgb(81, 72, 69);
+  transform: rotateY(180deg);
+}
+
+.flip-card-back a {
+  color: rgb(89, 105, 98);
+}
+
+.flip-card p {
+  min-width: 15em;
+  padding: .5em;
+  text-align: center;
+}
