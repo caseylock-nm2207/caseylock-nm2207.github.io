@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+    <title>PETS!</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <script defer type="text/javascript" src="appscripts/main.js"></script>
+  </head>
+
+  <body>
+    <div class="leaf-container">
+      <img src="resources/autumndog.png" style="width:100%">
+      <div class="centered">Do Pets Improve One's Life?</div>
+      <div class="leaves">
+        <div class="leaf1">🍁</div>
+        <div class="leaf2">🍁</div>
+        <div class="leaf3">🍁</div>
+        <div class="leaf4">🍁</div>
+        <div class="leaf6">🍁</div>
+        <div class="leaf7">🍁</div>
+        <div class="leaf8">🍁</div>
+        <div class="leaf9">🍁</div>
+        <div class="leaf10">🍁</div>
+        <div class="leaf11">🍁</div>
+        <div class="leaf12">🍁</div>
+        <div class="leaf13">🍁</div>
+        <div class="leaf14">🍁</div>
+        <div class="leaf15">🍁</div>
+        <div class="leaf16">🍁</div>
+      </div>
+    </div>
+    <div id="home">
+      <h1><a href="resources/storyboard.jpg" id="lighta">storyboard</a> and <a href ="https://docs.google.com/document/d/1EIa1uILnoq88xBNMmOpVp3R408adfcAn9JJzLMy7QQ4/edit?usp=sharing" id="lighta">documentation</a></h1>
+
+      <p>
+        In the <a href="https://www.earth.com/news/pet-owners-are-happier-than-people-who-dont-have-pets/" id="lighta">United States</a>, pet owners 
+        had an average happiness score of 70.7, and they were 87.3 percent happier than the average person.<br>
+        Other than happiness, people own pets for various reasons. This website shares more about it's emotional and physical benefits.
+      </p>
+      <div class="card-container">
+        <div class="card">
+          <img src="resources/people.png" style="width:100%; border-radius: 15px 15px 0px 0px;">
+          <div class="card-content">
+            <h4><b>Adults</b></h4>
+            <p>Click <a href="#mentalHealth" id="darka">here</a> to find out how getting pets improve mental health!</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="resources/elderly.png" style="width:100%; border-radius: 15px 15px 0px 0px;">
+          <div class="card-content">
+            <h4><b>Elderly</b></h4>
+            <p>Click <a href="#elderly" id="darka">here</a> to find out how getting pets benefit the elderly!</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="resources/children.png" style="width:100%; border-radius: 15px 15px 0px 0px;">
+          <div class="card-content">
+            <h4><b>Children</b></h4>
+            <p>Click <a href="#children" id="darka">here</a> to find out how getting pets benefit children!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mentalHealth">
+      <h1>Getting a pet for better mental health</h1>
+      <p>
+        As stated by <a href = "https://www.who.int/health-topics/mental-health#tab=tab_1" id="lighta">World Health Organisation</a>, there are many threats 
+        to mental health, such as economic and social inequalities, and more recently, the Covid-19 Pandemic. <br>
+        Poor mental health can kill. This is seen by suicide being the fourth leading cause of death among 15- to 19-year-olds. <br>
+        People with severe mental health conditions can die prematurely – as much as two decades early - due to preventable physical conditions. <br>
+        Yet, there is still a considerable gap between people needing care and those with access to care. <br>
+        As such, we hope for the benefits below to promote owning a pet as a way to improve mental health, especially for those who are afraid of going for therapy due to its stigma.
+      </p>
+      <h2>BENEFITS</h2>
+      <div class="benefitCard-container">
+        <div class="benefitCard">
+          <p id="mentalB1">
+            <span>Calming</span>
+          </p>
+          <p id="mentalB2">
+            <span>Companionship</span>
+          </p>
+          <p id="mentalB3">
+            <span>Meet New People</span>
+          </p>
+          <p id="mentalB4">
+            <span>Reduce Anxiety</span>
+          </p>
+          <p id="mentalB5">
+            <span>Keeping a Routine</span>
+          </p>
+          <p id="mentalB6">
+            <span>Increasing Exercise</span>
+          </p>
+          <p id="mentalB7">
+            <span>Relieve Stress</span>
+          </p>
+        </div>
+      </div>
+      <p>source: <a href = "https://www.helpguide.org/articles/mental-health/mood-boosting-power-of-dogs.htm" id="lighta">HelpGuide.org</a></p>
+      <div id="canvas-container">
+        <canvas id="barGraph" width="400" height="400"></canvas>
+      </div>
+      <p>source: <a href = "https://psycnet.apa.org/record/2011-13783-001?doi=1" id="lighta">Friends with benefits: On the positive consequences of pet ownership</a></p>
+      <p>
+        This graph illustrates that pet owners had greater self-esteem, greater levels of exercise and physical fitness, and tended to be less lonely than non-owners. <br>
+        Pet owners generally fared better at well-being outcomes, which are desirable for those with poor mental health.
+      </p>
+      <div id="canvas-container">
+        <canvas id="stackedBarGraph" width="400" height="400"></canvas>
+      </div>
+      <p>
+        source: <a href = "https://link.springer.com/article/10.1023/A:1006892908532" id="lighta">Health Benefits and Health Cost Savings Due to Pets: Preliminary 
+        Estimates from an Australian National Survey</a>
+      </p>
+      <p>
+        Even though the participants from the research paper are Australians, several other studies have confirmed the general thrust of these findings and have further explained
+        the mechanisms through which pets produced better health.
+        For example, <a href = "https://pubmed.ncbi.nlm.nih.gov/3236382/" id="lighta"></a>Vormbrock and Grossberg (1988) showed that patting a dog 
+        directly lowered the blood pressure of people with hypertension and <a href="https://www.jstor.org/stable/27522389" id="lighta">De Schriver and Riddick (1988)</a> 
+        showed that blood pressure can be lowered just by watching fish swim peacefully around in an aquarium.<br>
+      </p>
+      <h2>Now then, <a href="#petOwner" id="lighta">do you own a pet?</a></h2>
+    </div>
+
+    <div id="elderly">
+      <h1>Getting a pet for elderly</h1>
+      <p>
+        Older people are especially vulnerable to loneliness and social isolation - and it can have a serious effect on health. <br>
+        People can become socially isolated for a variety of reasons, such as getting older or weaker, no longer being the hub of their family, 
+        leaving the workplace, the deaths of spouses and friends, or through disability or illness. <br>
+        In <a href = https://www.duke-nus.edu.sg/allnews/media-releases/impact-of-loneliness-on-life-and-health-expectancy#:~:text=Nationally%20representative%20data%2C%20collected%20from,perceived%20themselves%20to%20be%20lonely." id="lighta">Singapore</a> 
+        alone, data collected from more than 2,000 older Singapore citizens and permanent residents showed that a third (34 per cent) perceived themselves to be lonely. 
+        This proportion increased with age, from 32 per cent among those aged 60–69 years, to 40 per cent among those aged 80 and above.
+      </p>
+      <h2>BENEFITS</h2>
+      <div class="benefitCard-container">
+        <div class="benefitCard">
+          <p id="elderlyB1">
+            <span>Meaning in Life</span>
+          </p>
+          <p id="elderlyB2">
+            <span>Reduce Loneliness</span>
+          </p>
+          <p id="elderlyB3">
+            <span>Health</span>
+          </p>
+          <p id="elderlyB4">
+            <span>Memory</span>
+          </p>
+        </div>
+      </div>
+      <p>
+        source: <a href = "https://www.helpguide.org/articles/mental-health/mood-boosting-power-of-dogs.htm" id="lighta">HelpGuide.org</a> 
+        and <a href = "https://www.parentgiving.com/elder-care/benefits-owning-pet-seniors-aging-in-place/" id="lighta">ParentGiving</a>
+      </p>
+      <div id="canvas-container">
+        <canvas id="stackedBarGraph2" width="400" height="400"></canvas>
+      </div>
+      <p>
+        source: <a href = "https://link.springer.com/article/10.1023/A:1006892908532" id="lighta">Health Benefits and Health Cost Savings Due to Pets: Preliminary Estimates 
+        from an Australian National Survey</a>
+      </p>
+      <p>
+        The fact that pets owners are less likely to be on medication and are less likely to need to visit the doctor is extremely vital to elderly as maintaining good health
+        is and should be the priority of all elderly.
+      </p>
+      <h2>Now then, <a href="#petOwner" id="lighta">do you own a pet?</a></h2>
+    </div>
+
+    <div id="children">
+      <h1>Getting a pet for children</h1>
+      <p>
+        Children could experience emotional distress and lack of social skills when parents are too busy for them due to various reasons like work, or military. <br> 
+        <!--https://thebossmagazine.com/kids-working-parents/#:~:text=The%20results%20which%20she%20found,birthdays%2C%20Christmas%2C%20and%20school%20events--><!--https://hbr.org/2018/11/how-our-careers-affect-our-children-->
+        Are you woried that you aren't spending enough time with you child? Fret not a pet will help!
+      </p>
+      <h2>BENEFITS</h2>
+      <div class="benefitCard-container">
+        <div class="benefitCard">
+          <p id="childrenB1">
+            <span>Coping Skills</span>
+          </p>
+          <p id="childrenB2">
+            <span>Self-Esteem</span>
+          </p>
+          <p id="childrenB3">
+            <span>Empathy</span>
+          </p>
+          <p id="childrenB4">
+            <span>Health</span>
+          </p>
+          <p id="childrenB5">
+            <span>Responsibility</span>
+          </p>
+        </div>
+      </div>
+      <p>source: <a href = "https://www.catanddogma.com/why-pets-can-be-positive-for-your-kids/#:~:text=Boost%20Self%2DEsteem&text=According%20to%20a%20report%20from,chance%20to%20practice%20social%20skills." id="lighta">Cat & Dogma</a></p>
+      <div id="canvas-container">
+        <canvas id="barGraph2" width="400" height="400"></canvas>
+      </div>
+      <p>source: <a href = "https://journals.sagepub.com/doi/10.2466/pr0.1990.67.1.51" id="lighta">Differential Effects of Pet Presence and Pet-Bonding on Young Children</a></p>
+      <p>
+        Having a pet benefits children in many ways. Even though the presence of a pet is already beneficial (eg. reduce uncooperativeness), encouraging children
+        to form a good bond with it will increase the benefits received from getting a pet.
+      </p>
+      <h2>Now then, <a href="#petOwner" id="lighta">do you own a pet?</a></h2>
+    </div>
+
+    <h1 id="petOwner">&#128054 Do you own a pet? &#128049</h1>
+    <div class="tab">
+      <button class="tabLinks" onclick="openTab(event, 'Yes')">Yes</button>
+      <button class="tabLinks" onclick="openTab(event, 'No')">No</button>
+    </div>
+
+    <div id="Yes" class="tabContent">
+      <p>
+        You are one of the many pet owners in this world yipeeee!<br>
+        Switch between the views to see the percentage of dog or cat owners in different countries in the world!
+      </p>
+      <div class="map-container">
+        <p>
+          <span>Dog</span>
+          <span>Cat</span>
+        </p>
+        <input class="checkbox" type="checkbox" id="checkbox">
+        <label for="checkbox"></label>
+        <div class="map-3d-wrap">
+          <div class="map-3d-wrapper">
+            <div class="map-front">
+              <div class="center-wrap">
+                <h3>Percentage of Dog Owners in Different Countries</h3>
+                <div id="mapGraph-container">
+                  <div id="mapGraph"></div>
+                </div>
+                <p>source: <a href="https://www.gfk.com/insights/mans-best-friend-global-pet-ownership-and-feeding-trends" id="darka">Growth From Knowledge</a></p>
+              </div>
+            </div>
+            <div class="map-back">
+              <div class="center-wrap">
+                <h3>Percentage of Cat Owners in Different Countries</h3>
+                <div id="mapGraph-container">
+                  <div id="mapGraph2"></div>
+                </div>
+                <p>source: <a href="https://www.gfk.com/insights/mans-best-friend-global-pet-ownership-and-feeding-trends" id="darka">Growth From Knowledge</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>As a pet owner, could you leave some advice or suggestions you would give to people looking to own a pet?</h3>
+      <div class="inputAdvice">
+        <p>Do you own a cat or dog?</p>
+        <input id="pet" type="text" placeholder="Type here..." name="text" class="input"><br><br>
+        <p>What breed is it?</p>
+        <input id="breed" type="text" placeholder="Type here..." name="text" class="input"><br><br>
+        <p>What advice/suggestion do you have for those looking to adopt one?</p>
+        <input id="advice" type="text" placeholder="Type here..." name="text" class="input"><br><br>
+        <button id="adviceButton">submit response</button>
+      </div>
+      <h3>Thinking of adopting another pet?</h3>
+      <p>Click <a href="#adopt" id="darka">here</a> to look at potential options!</p>
+    </div>
+
+    <div id="No" class="tabContent">
+      <p>If the benefits mentioned above have convinced you, go <a href="#adopt" id="darka">adopt</a> a pet now!</p>
+      <p>
+        However, if you can't afford a pet, fret not, there are alternatives such as (Singapore-based) <a href = "https://confirmgood.com/post/12-animal-cafes-in-singapore/" id="darka">
+        visiting pet cafes</a> or <a href = "https://thehoneycombers.com/singapore/animal-charity-pets-where-volunteer-help-animals-singapore/" id="darka">volunteering at an 
+        animal shelter</a>.
+      </p>
+      <button class="accordion">Advice given by pet owners</button>
+      <div class="panel">
+        <p>Before you decide to get a pet, here are some advice or suggestions from pet owners that you should take a look at!</p>
+        <div id="givenAdvice-container">
+          <div id="givenAdvice">
+            <ol id="list"></ol>
+          </div>
+        </div>
+        <p>Hope these aid you in your decision of getting a pet!</p>
+      </div>
+      <button class="accordion">Take this <strong>Personality Quiz</strong> if you are unsure about whether a cat or dog suits you more!</button>
+      <div class="panel">
+        <p>This is a short 10 questions personality test to help you with your decision on what pet you should get!</p>
+        <p id="question">After a long day at work, hanging out with a bunch of friends is the best way to wind down.</p>
+        <input type="radio" name="question1" [value]="-2"> Strongly Disagree
+        <input type="radio" name="question1" value="-1"> Disagree
+        <input type="radio" name="question1" value="0"> Neutral
+        <input type="radio" name="question1" value="1"> Agree
+        <input type="radio" name="question1" value="2"> Strongly Agree
+        <br>
+        <p id="question">I work better when I multitask.</p>
+        <input type="radio" name="question2" [value]="-2"> Strongly Disagree
+        <input type="radio" name="question2" value="-1"> Disagree
+        <input type="radio" name="question2" value="0"> Neutral
+        <input type="radio" name="question2" value="1"> Agree
+        <input type="radio" name="question2" value="2"> Strongly Agree
+        <br>
+        <p id="question">People describe me as talkative and outgoing.</p>
+        <input type="radio" name="question3" [value]="-2"> Strongly Disagree
+        <input type="radio" name="question3" value="-1"> Disagree
+        <input type="radio" name="question3" value="0"> Neutral
+        <input type="radio" name="question3" value="1"> Agree
+        <input type="radio" name="question3" value="2"> Strongly Agree
+        <br>
+        <p id="question">I love sharing my work on the internet and getting my ideas out there. (eg. sharing a drawing I drew on social media)</p>
+        <input type="radio" name="question4" [value]="-2"> Strongly Disagree
+        <input type="radio" name="question4" value="-1"> Disagree
+        <input type="radio" name="question4" value="0"> Neutral
+        <input type="radio" name="question4" value="1"> Agree
+        <input type="radio" name="question4" value="2"> Strongly Agree
+        <br>
+        <p id="question">Meeting new people is fun. It is not nerve wrecking for me to approach someone I find interesting to strike a conversation.</p>
+        <input type="radio" name="question5" [value]="-2"> Strongly Disagree
+        <input type="radio" name="question5" value="-1"> Disagree
+        <input type="radio" name="question5" value="0"> Neutral
+        <input type="radio" name="question5" value="1"> Agree
+        <input type="radio" name="question5" value="2"> Strongly Agree
+        <br>
+        <p id="question">Calling is much better than texting.</p>
+        <input type="radio" name="question6" [value]="-2"> Strongly Disagree
+        <input type="radio" name="question6" value="-1"> Disagree
+        <input type="radio" name="question6" value="0"> Neutral
+        <input type="radio" name="question6" value="1"> Agree
+        <input type="radio" name="question6" value="2"> Strongly Agree
+        <br>
+        <p id="question">I chat someone up whenever I have free time because I feel too restless.</p>
+        <input type="radio" name="question7" [value]="-2"> Strongly Disagree
+        <input type="radio" name="question7" value="-1"> Disagree
+        <input type="radio" name="question7" value="0"> Neutral
+        <input type="radio" name="question7" value="1"> Agree
+        <input type="radio" name="question7" value="2"> Strongly Agree
+        <br>
+        <p id="question">When it comes to small talk, I can dive right in and conversational topics come to mind almost immediately.</p>
+        <input type="radio" name="question8" [value]="-2"> Strongly Disagree
+        <input type="radio" name="question8" value="-1"> Disagree
+        <input type="radio" name="question8" value="0"> Neutral
+        <input type="radio" name="question8" value="1"> Agree
+        <input type="radio" name="question8" value="2"> Strongly Agree
+        <br>
+        <p id="question">I would much rather do group projects than individual work.</p>
+        <input type="radio" name="question9" [value]="-2"> Strongly Disagree
+        <input type="radio" name="question9" value="-1"> Disagree
+        <input type="radio" name="question9" value="0"> Neutral
+        <input type="radio" name="question9" value="1"> Agree
+        <input type="radio" name="question9" value="2"> Strongly Agree
+        <br>
+        <p id="question">I find silence uncomfortable.</p>
+        <input type="radio" name="question10" [value]="-2"> Strongly Disagree
+        <input type="radio" name="question10" value="-1"> Disagree
+        <input type="radio" name="question10" value="0"> Neutral
+        <input type="radio" name="question10" value="1"> Agree
+        <input type="radio" name="question10" value="2"> Strongly Agree
+        <br><br>
+        <button id="testButton" onclick="getResult(),refreshTest()">get your results</button>
+        <br><br>
+        <div id="result"></div>
+        <p>You can read more about your results in this <a href = "https://www.mckendree.edu/academics/scholars/issue18/paluska.htm#:~:text=Similarly%2C%20personality%20traits%20like%20introversion,%2C%20%26%20Potter%2C%202010)." id="darka">reseach paper</a>.</p>
+        <br>
+        <div id="canvas-container">
+          <h3>Take a look at the radar graph to see the personalities of cat and dog owners in general. Do you relate to them?</h3>
+          <p>extraversion (sociability); agreebleness (kindness); openness (creativity); conscientiousness (thoughtfullness); neuroticism (emotional instability) </p>
+          <div id="petRadar-container">
+            <canvas id="petRadar"></canvas>
+          </div>    
+          <p> Personalities of dog and cat owners were assessed using the Big Five Personality Inventory (BFI; John, Donahue and Kentle 1991). <br>
+            More information about research conducted can be found <a href = "https://www.tandfonline.com/doi/abs/10.1080/08927936.2016.1152721" id="darka">here</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="adopt">
+      <h1>Adopt a Furry Animal</h1>
+      <h2>Not sure where to look?</h2>
+      <p>Here are some websites you can visit to get your very own furry animal :D (Asia-based)</p>
+      <div id="details">
+        <div class="info">
+          <p>
+            Cats:<br>
+            <a href="https://www.catwelfare.org/" id="darka">Cat Welfare Society</a><br>
+            <a href="https://avoiceforallpaws.com/" id="darka">A Voice for All Paws</a><br><br>
+            Dogs:<br>
+            <a href="https://www.oscas.sg/help-adopt/" id="darka">OSCA</a><br>
+            <a href="https://asdsingapore.com/" id="darka">Action for Dogs</a><br><br>
+            Cats and Dogs:<br>
+            <a href="https://www.animalloversleague.com/" id="darka">Animal Lovers League</a>
+          </p>
+          <div class="country">
+              <p>Singapore</p>
+          </div>
+        </div>
+        <div class="info">
+          <p>
+            Dogs:<br>
+            <a href="https://www.secondchance.com.my/" id="darka">Second Chance Animal Shelter</a><br>
+            <a href="https://mypetshaven.org/" id="darka">My Pet's Haven</a><br><br>
+            Cats and Dogs:<br>
+            <a href="https://www.paws.org.my/" id="darka">PAWS Animal Welfare Society</a><br>
+            <a href="https://www.spca.org.my/" id="darka">SPCA Selangor</a></p>
+          <div class="country">
+              <p>Malaysia</p>
+          </div>
+        </div>
+        <div class="info">
+          <p>
+            Dogs:<br>
+            <a href="https://savekoreandogs.org/" id="darka">Save Korean Dogs</a><br>
+            <a href="http://www.babymong.co.kr/shop/main/index.php" id="darka">BabyMong HQ Store</a><br>
+            <a href="https://blog.naver.com/yonginanimal17" id="darka">Animal Protection Center in Yongin City</a><br><br>
+            Cats and Dogs:<br>
+            <a href="https://www.ekara.org/" id="darka">Kara Adoption Cafe</a>
+          </p>
+          <div class="country">
+              <p>Korea</p>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div id="details">
+        <div class="info">
+          <p>
+            Dogs:<br>
+            <a href="https://peace-wanko.jp/" id="darka">Peace Wanko</a><br><br>
+            Cats and Dogs:<br>
+            <a href="https://www.heart-tokushima.com/" id="darka">Heart Tokushima</a><br>
+            <a href="http://www.arkbark.net/" id="darka">Animal Refuge Kansai Osaka</a>
+            <a href="https://www.pawsyokosuka.org/" id="darka">Paws Yokosuka</a>
+          </p>
+          <div class="country">
+              <p>Japan</p>
+          </div>
+        </div>
+        <div class="info">
+          <p>
+            Dogs:<br>
+            <a href="https://houndhavenph.org/" id="darka">Hound Haven</a><br><br>
+            Cats and Dogs:<br>
+            <a href="https://paws.org.ph/" id="darka">The Phillipines Animal Welfare Society</a><br>
+            <a href="https://www.caraphil.org/" id="darka">CARA Welfare</a><br>
+            <a href="https://pawssionproject.org.ph/" id="darka">Pawssion Project</a>
+          </p>
+          <div class="country">
+              <p>Phillipines</p>
+          </div>
+        </div>
+        <div class="info">
+          <p>
+            Dogs:<br>
+            <a href="https://hopeforstrays.org/" id="darka">Hope For Strays</a><br><br>
+            Cats and Dogs:<br>
+            <a href="https://www.soidog.org/" id="darka">Soi Dog</a><br>
+            <a href="https://lantaanimalwelfare.com/" id="darka">Lanta Animal Welfare</a>
+          </p>
+          <div class="country">
+              <p>Thailand</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
